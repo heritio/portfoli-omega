@@ -1,0 +1,179 @@
+
+.project-preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 9rem auto 0 auto;
+    max-width: 90%;
+    @media only screen and (min-width: 27em) {
+        flex-direction: row;
+        margin: 1rem auto 0 auto;
+    }
+    &__img{
+       flex-basis: 1;
+       width: 90%;
+       @media only screen and (min-width: 27em) {
+        width: 50%;
+        margin: 9rem 0;
+      }
+    }
+    &__text{
+        flex-basis: 1;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border-top: 1px solid hsl(245°, 10%, 22%);
+        @media only screen and (min-width: 27em) {
+            width: 70%;
+            margin: 0  5rem;
+            
+        }
+    }
+    &__title{
+        font-size: 4rem;
+        color: hsl(205°, 41%, 21%);
+        font-family: var(--headings-text);
+        @media only screen and (min-width: 27em) {
+           
+            font-size: clamp(1.6rem, 3vw, 4rem);
+        }
+         
+    }
+    &__info{
+        font-family: var(--body-text);
+        color: hsl(245°, 10%, 22%);
+        margin: 2rem 0;
+        font-size: 1.4rem;
+        @media only screen and (min-width: 27em) {
+            width: 50%;
+            font-size:  clamp(1.6rem, 2vw, 2.2rem);;
+            width: 100%;
+        }
+    }
+    &__btn{
+        height: 4.8rem;
+        width: 17.5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover{
+          color: hsl(245°, 10%, 22%);
+        }
+    }
+}
+
+.reverse{
+    @media only screen and (min-width: 27em) {
+        flex-direction: row-reverse;
+    }
+    
+}
+//project-detail route
+.project-detail{
+   width: 85%;
+   margin: 0 auto;
+   
+   @media only screen and (min-width: 27em) {
+    width: 65%;
+   } 
+
+   //hero for product detail
+    &__hero{
+        width: 100%;
+         height: auto;
+        margin: 2rem auto;
+    }
+    //container
+    &__container{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    //call to action to visit website
+
+    &__cta{
+      
+       display: flex;
+       flex-direction: column;
+       max-width: 90%;
+       margin: 0 auto;
+       border-bottom: 1px solid black;
+       border-top: 1px solid black;
+       @media only screen and (min-width: 27em) {
+        flex-direction: row;
+        height: 20.8rem;
+        align-items: center;
+       } 
+    }
+    &__cta-1{
+        flex-basis: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__cta-name{
+        font-size: 2.4rem;
+       font-family: var(--headings-text);
+       color: hsl(205°, 41%, 21%);
+       margin: 1rem;
+    }
+    &__cta-info{
+        flex-basis: 1;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 1rem;
+        @media only screen and (min-width: 27em) {
+            width: 90%;
+           } 
+    }
+    &__cta-tech{
+       color: hsl(0°, 0%, 98%);
+    }
+    &__cta-objective{
+      color: hsl(0°, 0%, 98%);
+    }
+    &__cta-btn{
+        height: 4.8rem;
+        width: 17.8rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        background: white;
+        border: 1px solid black;
+        cursor: pointer;
+        margin-left: 2rem;
+        @media only screen and (min-width: 27em) {
+             margin-left: 0;
+        } 
+    }
+   //static preview
+    &__info{
+       max-width: 90%;
+       margin: 3rem auto;
+    }
+    &__info-title{
+        font-size: 2.4rem;
+        font-family: var(--headings-text);
+        color: hsl(205°, 41%, 21%);
+        margin: 1rem;
+    }
+    &__info-background{
+        flex-basis: 1;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 1rem;
+        @media only screen and (min-width: 27em) {
+            width: 90%;
+           } 
+    }
+    &__info-static{
+        font-size: 2.4rem;
+        font-family: var(--headings-text);
+        color: hsl(205°, 41%, 21%);
+        margin: 1rem;
+    }
+    &__info-gif{
+       max-width: 100%;
+    }
+}

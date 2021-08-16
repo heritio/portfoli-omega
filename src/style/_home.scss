@@ -1,0 +1,191 @@
+
+
+.home{
+    max-width: 85%;
+    margin: 3rem auto 0 auto;
+    font-family: var(--body-text);
+    
+    @media only screen and (min-width: 27em) {
+        max-width: 75%;
+    }
+
+    &__section-1{
+      
+    }
+    &__hero{
+       max-width: 100%;
+       position: relative;
+       z-index: 5;
+      height: auto;
+    }
+    &__section-1-cta{
+      
+      
+      @media only screen and (min-width: 27em) {
+        position: relative;
+        height: 25.7rem;
+        z-index: 10;
+        bottom: 25rem;
+        background: white;
+        max-width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: -20rem;
+       
+        
+      }
+    }
+    &__section-1-cta-text{
+
+        font-family: var(--headings-text);
+        line-height: 1.5;
+        font-size: 3rem;
+        color: hsl(205°, 41%, 21%);
+        max-width: 100%;
+        background: white;
+
+        @media only screen and (min-width: 27em) {
+          max-width: 80%;
+          font-size: clamp(2rem,3vw,3.5rem) ;
+          word-wrap: break-word;
+        }
+    }
+    &__button{
+     height: 4.1rem;
+     width: 20rem;
+     display: flex;
+     justify-content:flex-start;
+     align-items: center;
+     cursor: pointer;
+    }
+    &__button-arrow{
+       position: relative;
+       background: hsl(245°, 10%, 22%);
+       height: 4.1rem;
+       width: 4.1rem;
+
+       g{
+       transform: translate(30%, 30%);
+       }
+    }
+    &__button-btn{
+        padding: 1rem;
+        height: 4.1rem;
+        border: none;
+        background: hsl(205°, 41%, 21%);
+        color: white;
+ 
+    }
+
+    &__section-2{
+      display: flex;
+      flex-direction: column;
+      margin-top: 9rem;
+      @media only screen and (min-width: 27em) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    &__section-2-img{
+      flex-basis: 1;
+      width: 100%;
+      @media only screen and (min-width: 27em) {
+        width: 40%;
+      }
+      
+    }
+    &__section-2-about{
+      flex-basis: 2;
+      width: 100%;
+      padding: 2rem 0;
+      @media only screen and (min-width: 27em) {
+        margin-left: 5rem;
+        
+      }
+    }
+    &__section-2-title{
+      font-size: clamp(2rem,3vw,3.5rem) ;
+      font-family: var(--headings-text);
+      color: hsl(205°, 41%, 21%);
+    }
+    &__section-2-info{
+      font-size: clamp(1.2rem,1.5vw,2rem) ;
+      margin: 2rem 0;
+      width: 100%;
+      color: hsl(205°, 41%, 21%);
+      @media only screen and (min-width: 27em) {
+        width: 70%;
+        
+      }
+    } 
+    &__section-2-cta{
+       width: 20.2rem;
+       height: 4.8rem;
+       font-size: clamp(1.2rem,1.5vw,2rem) ;
+       color: hsl(205°, 41%, 21%);
+       border: 1px solid hsl(205°, 41%, 21%);
+       cursor: pointer;
+       :hover{
+      
+         border: 4px solid hsl(205°, 41%, 21%);
+       }
+    }
+
+    
+}
+
+.contact-cta{
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem auto 0 auto;
+  text-align: center;
+  justify-content: center;
+  @media only screen and (min-width: 27em) {
+    flex-direction: row;
+    
+  }
+
+  &__title{
+    font-size: clamp(2rem,3vw,3.5rem) ;
+      font-family: var(--headings-text);
+      color: hsl(205°, 41%, 21%);
+      margin-bottom: 2rem;
+      @media only screen and (min-width: 27em) {
+        flex-basis: 1;
+        width: 40%;
+        text-align: start;
+        margin-bottom: 0;
+      }
+  }
+  &__btn{
+    width: 20.2rem;
+    height: 4.8rem;
+    font-size: clamp(1.2rem,1.5vw,2rem) ;
+    color: hsl(205°, 41%, 21%);
+    border: 1px solid hsl(205°, 41%, 21%);
+    cursor: pointer;
+    :hover{
+   
+      border: 4px solid hsl(205°, 41%, 21%);
+    }
+    @media only screen and (min-width: 27em) {
+      
+      flex-basis: 1;
+      width: 40%;
+    }
+  }
+
+  &::before{
+    content: "";
+    border-top: 1px hsl(205°, 41%, 21%) solid;
+    position: absolute;
+    width: 30%;
+    left: 20vw;
+    @media only screen and (max-width: 27em) {
+      display: none;
+    }
+  }
+}

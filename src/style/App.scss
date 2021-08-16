@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html { font-size: 62.5%; font-family:  'Public Sans', sans-serif;}
+
+:root{
+  --slightly-desaturated-cyan: hsl(167°, 36%, 54%);
+  --dark-blue-color: hsl(205°, 41%, 21%);
+  --grayish-dark-blue:  hsl(245°, 10%, 22%);
+  --very-light-grey: hsl(0°, 0%, 98%);
+  --light-grey:  hsl(240°, 2%, 92%);
+  --bright-red-error: hsl(0°, 90%, 57%);
+  --body-text: 'Public Sans', sans-serif;
+  --headings-text:  'Ibarra Real Nova', serif;
+}
+
+@import "./header";
+@import "./home";
+@import "./footer";
+@import "./projects";
+@import "./projectdetail";
+@import "./contact";
+
+.hide{
+  display: none;
+}
