@@ -30,7 +30,7 @@ export default function Contact() {
       nameTitle.classList.remove("contact__form-error-text");
     }
 
-    if (!validateEmail(email) || email.length === 0) {
+    if (!validateEmail(email) ) {
       let emailInput = document.querySelector(".email-input");
       let emailTitle = document.querySelector(".email-title");
       emailInput.classList.add("contact__form-error");
@@ -74,8 +74,7 @@ export default function Contact() {
           <p className="contact__info-text">
             I’d love to hear about what you’re working on and how I could help.
             I’m currently looking for a new role and am open to a wide range of
-            opportunities. My preference would be to find a position in a
-            company in London. But I’m also happy to hear about opportunites
+            opportunities. My preference would be to find a remote position. But I’m also happy to hear about opportunites
             that don’t fit that description. I’m a hard-working and positive
             person who will always approach each task with a sense of purpose
             and attention to detail. Please do feel free to check out my online
@@ -93,7 +92,7 @@ export default function Contact() {
       </div>
       <div className="contact__form">
         <h3 className="contact__title">Contact Me</h3>
-        <form className="contact__inputs" onSubmit={(e) => formHandler(e)}>
+        <form action="POST" className="contact__inputs" onSubmit={(e) => formHandler(e)} data-netlify="true">
           <div className="contact__inputs-container">
             <p className="contact__form-title name-title">Name</p>
             <input
@@ -109,7 +108,7 @@ export default function Contact() {
             <input
               onChange={(e) => setEmail(e)}
               className="email-input contact__form-input"
-              type="email"
+              type="text"
               placeholder="Example@gmail.com"
               name="email"
             />
