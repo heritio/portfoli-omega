@@ -1,0 +1,127 @@
+
+.contact{
+   width: 90%;
+   margin: 5rem auto 0 auto;
+    &__title{
+      font-size: 2rem;
+      color: hsl(205°, 41%, 21%);
+      font-family: var(--headings-text);
+      margin: 1rem auto;
+      width: 100%;
+      @media only screen and (min-width: 27em) {
+        flex-basis: 1;
+        width: 100%;
+     }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        
+        @media only screen and (min-width: 27em) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-basis: 1;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    &__get-in-touch{
+       font-family: var(--body-text);
+       font-size: 1.5rem;
+       line-height: 1.5;
+       margin: 1rem auto;
+       @media only screen and (min-width: 27em) {
+        flex-basis: 1;
+        width: 100%;
+       }
+    } 
+    &__info-links{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        li{
+            list-style: none;
+            margin-top: 1rem;
+            width: 4.8rem;
+            height: 4.8rem;
+            font-size: 2.5rem;
+        }
+    }
+    &__form{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media only screen and (min-width: 27em) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-basis: 1;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    &__title{
+        @media only screen and (min-width: 27em) {
+            flex-basis: 1;
+            width: 100%;
+         }
+    }
+    &__inputs{
+        width: 100%;
+        @media only screen and (min-width: 27em) {
+            flex-basis: 1;
+            width: 100%;
+           }
+    } 
+    &__inputs-container{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    &__form-title{
+        width: 100%;
+        font-size: 1.5rem;
+        color: hsl(205°, 41%, 21%);
+        font-weight: bold;
+    }
+    &__form-input{
+        width: 100%;
+        height: 4rem;
+        background: hsl(240°, 2%, 92%);
+        font-size: 1.5rem;
+        border: none;
+        padding: 1.5rem .5rem;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__form-input2{
+        width: 100%;
+        height: 10rem;
+        background: hsl(240°, 2%, 92%);
+        font-size: 1.5rem;
+        border: none;
+        resize: none;
+        padding: 1.5rem .5rem;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__form-btn{
+        height: 4.8rem;
+        width: 12rem;
+        background: hsl(205°, 41%, 21%);
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    &__form-error{
+        border: 1px solid red;
+    }
+    &__form-error-text{
+        color: red;
+    }
+}

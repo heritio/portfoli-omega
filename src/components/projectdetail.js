@@ -16,9 +16,9 @@ export default function Projectdetail(props) {
         <div className="project-detail__cta">
           <div className="project-detail__cta-1">
             <h2 className="project-detail__cta-name">{ourItem.name}</h2>
-            <button className="project-detail__cta-btn">visit website</button>
-            <p className="project-detail__cta-objective">{ourItem.objective}</p>
-            <p className="project-detail__cta-tech">{ourItem.technologyUsed}</p>
+            <h3 className="project-detail__cta-tech">{ourItem.objective}</h3>
+            <h3 className="project-detail__cta-tech">{ourItem.technologyUsed}</h3>
+            <button className="project-detail__cta-btn"><a href={ourItem.websiteUrl}>visit website</a> </button> 
           </div>
           <p className="project-detail__cta-info">{ourItem.previewInfo}</p>
         </div>

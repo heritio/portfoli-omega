@@ -56,11 +56,12 @@ export default function Projects() {
         "This project required me to build a fully responsive crowdfunding website to the designs provided. I used HTML5, along with CSS Grid and javascript for the areas that required interactivity and statemanagement",
       imgUrlMob: srcCrowd,
       imgUrlDesktop: srcCrowdBig,
-      ourGif: srcCrowdBig,
+      ourGif: srcCrowdGif,
       projectBackground:
         "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
       objective: "Interaction Design / Front End Development",
       technologyUsed: " HTML / CSS / JS",
+      websiteUrl: "https://laughing-stonebraker-ba7a5c.netlify.app/",
     },
     {
       name: "Blogr Landing Page",
@@ -73,6 +74,7 @@ export default function Projects() {
         "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
       objective: "Interaction Design / Front End Development",
       technologyUsed: " HTML / CSS / JS",
+      websiteUrl: "https://flamboyant-shirley-09ef60.netlify.app/",
     },
     {
       name: "Loopstudios landing Page",
@@ -85,6 +87,7 @@ export default function Projects() {
         "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
       objective: "Interaction Design / Front End Development",
       technologyUsed: " HTML / CSS / JS",
+      websiteUrl: "https://gifted-lumiere-af0b43.netlify.app/",
     },
   ];
   return (
@@ -94,7 +97,7 @@ export default function Projects() {
           <Projectpreview
             key={index + 1}
             item={item}
-            reverse={index % 2 == 0 ? false : true}
+            reverse={index % 2 === 0 ? false : true}
             projects={ourProjects}
           />
         );

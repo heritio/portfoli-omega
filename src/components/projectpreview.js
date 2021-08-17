@@ -2,7 +2,7 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 export default function Projectpreview(props) {
-  const isBigScreen = useMediaQuery({ query: "(min-width: 27em)" });
+  
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 27em)" });
 
   return (

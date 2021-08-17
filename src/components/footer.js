@@ -11,8 +11,8 @@ function Footer() {
                 <li className="footer__links-item">Contact me</li>
             </ul>
             <ul className="footer__socials">
-                <li className="footer__socials-item"><i class="fab fa-linkedin"></i></li>
-                <li className="footer__socials-item"><i class="fab fa-github"></i></li>
+                <li className="footer__socials-item"><a href="https://www.linkedin.com/in/heritier-akilimali-6a2856141/"><i class="fab fa-linkedin"></i></a></li>
+                <li className="footer__socials-item"><a href="https://github.com/heritio"><i class="fab fa-github"></i></a> </li>
             </ul>
         </div>
     )

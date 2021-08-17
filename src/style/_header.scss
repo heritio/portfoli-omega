@@ -38,7 +38,7 @@
         position: absolute;
         right:100%;
         color: white;
-        background: black;
+        background: hsl(205°, 41%, 21%);
         font-size: 1.6rem;
         height: 18.6rem;
         width: 22.3rem;
@@ -50,7 +50,10 @@
         li{
             list-style: none;
             cursor: pointer;
-           
+           a{
+               text-decoration: none;
+               color: white;
+           }
         }
         @media only screen and (min-width: 27em) {
             display: none;
@@ -61,12 +64,18 @@
 
        li{
            list-style: none;
-           margin-right: 1.5rem;
+           margin-right: 3rem;
            cursor: pointer;
-           font-weight: bolder;
+           font-weight: normal;
+           font-size: 1.4rem;
            &:hover{
-            color: hsl(205°, 41%, 21%);
+            color: hsl(167°, 36%, 54%);
+            transform: scale(1.2);
            }
+           a{
+            text-decoration: none;
+            color: hsl(205°, 41%, 21%);
+          }
        }
        @media only screen and (max-width: 27em) {
         display: none;

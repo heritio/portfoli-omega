@@ -53,6 +53,7 @@
         }
     }
     &__btn{
+        overflow: hidden;
         height: 4.8rem;
         width: 17.5rem;
         font-size: 1.5rem;
@@ -83,7 +84,7 @@
     &__hero{
         width: 100%;
          height: auto;
-        margin: 2rem auto;
+        margin: 5rem auto 5rem auto;
     }
     //container
     &__container{
@@ -101,9 +102,10 @@
        margin: 0 auto;
        border-bottom: 1px solid black;
        border-top: 1px solid black;
+       
        @media only screen and (min-width: 27em) {
         flex-direction: row;
-        height: 20.8rem;
+        height: 24rem;
         align-items: center;
        } 
     }
@@ -117,7 +119,7 @@
         font-size: 2.4rem;
        font-family: var(--headings-text);
        color: hsl(205°, 41%, 21%);
-       margin: 1rem;
+       margin: 1rem auto 1rem 0;
     }
     &__cta-info{
         flex-basis: 1;
@@ -126,15 +128,19 @@
         margin: 1rem;
         @media only screen and (min-width: 27em) {
             width: 90%;
-           } 
+        } 
     }
     &__cta-tech{
-       color: hsl(0°, 0%, 98%);
+       color: rgb(111, 221, 111);
+       font-size: 1.5rem;
     }
     &__cta-objective{
-      color: hsl(0°, 0%, 98%);
+      color: rgb(116, 223, 116);
+      margin: 2rem 0;
+      font-size: 1.5rem;
     }
     &__cta-btn{
+        overflow: hidden;
         height: 4.8rem;
         width: 17.8rem;
         font-size: 1.4rem;
@@ -142,9 +148,18 @@
         background: white;
         border: 1px solid black;
         cursor: pointer;
-        margin-left: 2rem;
+        margin: 2rem 0;
+
+        &:hover{
+          background: hsl(240°, 2%, 92%);
+        }
+        a{
+            text-decoration: none;
+            color: hsl(205°, 41%, 21%);
+            overflow: hidden;
+        }
         @media only screen and (min-width: 27em) {
-             margin-left: 0;
+             margin: 2rem 0 2rem 0;
         } 
     }
    //static preview
@@ -171,7 +186,7 @@
         font-size: 2.4rem;
         font-family: var(--headings-text);
         color: hsl(205°, 41%, 21%);
-        margin: 1rem;
+        margin: 2rem auto 2rem auto;
     }
     &__info-gif{
        max-width: 100%;
